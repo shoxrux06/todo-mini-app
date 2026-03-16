@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="uz"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Vazifalar ro'yxati&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://telegram.org/js/telegram-web-app.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* { margin: 0; padding: 0; box-sizing: border-box; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: -apple-system, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--tg-theme-bg-color, #fff);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--tg-theme-text-color, #000);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 { font-size: 20px; margin-bottom: 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.input-row {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; gap: 8px; margin-bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex: 1; padding: 10px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #ddd; border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--tg-theme-secondary-bg-color, #f5f5f5);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--tg-theme-text-color, #000);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button.add-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #0088cc; color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none; border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 15px; cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.task {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex; align-items: center; gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px; margin-bottom: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--tg-theme-secondary-bg-color, #f5f5f5);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.task.done span { text-decoration: line-through; opacity: 0.5; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.task span { flex: 1; font-size: 15px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.task input[type=checkbox] { width: 20px; height: 20px; cursor: pointer; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.del-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: none; border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ff453a; font-size: 20px; cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.empty { text-align: center; color: #999; margin-top: 40px; font-size: 15px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;📝 Vazifalarim&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="input-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input id="taskInput" type="text" placeholder="Yangi vazifa..." /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button class="add-btn" onclick="addTask()"&gt;Qo'sh&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="taskList"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let tasks = JSON.parse(localStorage.getItem('tasks') || '[]');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function save() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>localStorage.setItem('tasks', JSON.stringify(tasks));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function render() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const list = document.getElementById('taskList');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (tasks.length === 0) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>list.innerHTML = '&lt;div class="empty"&gt;Hozircha vazifa yo\'q&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>list.innerHTML = tasks.map((t, i) =&gt; `</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="task ${t.done ? 'done' : ''}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;input type="checkbox" ${t.done ? 'checked' : ''} onchange="toggle(${i})"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;${t.text}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="del-btn" onclick="remove(${i})"&gt;×&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>`).join('');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function addTask() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const input = document.getElementById('taskInput');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const text = input.value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (!text) return;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tasks.unshift({ text, done: false });</p>
+<p class="p1"><span class="Apple-converted-space">      </span>input.value = '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>save(); render();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function toggle(i) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tasks[i].done = !tasks[i].done;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>save(); render();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function remove(i) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tasks.splice(i, 1);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>save(); render();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('taskInput').addEventListener('keypress', e =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (e.key === 'Enter') addTask();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>render();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
